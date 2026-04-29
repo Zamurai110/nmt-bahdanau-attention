@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.env
+venv/
+env/
+
+# Data (too large for Git — download on first run)
+data/raw/
+data/processed/
+
+# Model checkpoints (large binary files)
+checkpoints/
+*.pt
+*.pth
+
+# Logs / TensorBoard
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
