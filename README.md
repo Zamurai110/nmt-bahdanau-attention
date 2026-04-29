@@ -13,7 +13,7 @@
 | Decoding  | BLEU Score | Dataset |
 |-----------|-----------|---------|
 | Greedy    | —         | —       |
-| Beam (k=5)| **32.47** | ~175k pairs |
+| Beam (k=5)| **50.31** | ~175k pairs |
 
 > Fill in after running `python evaluate.py`
 
