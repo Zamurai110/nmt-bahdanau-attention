@@ -86,7 +86,7 @@ nmt-bahdanau-attention/
 ### 1 · Clone and install
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/nmt-bahdanau-attention.git
+git clone https://github.com/Zamurai110/nmt-bahdanau-attention.git
 cd nmt-bahdanau-attention
 pip install -r requirements.txt
 ```
