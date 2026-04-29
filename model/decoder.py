@@ -62,7 +62,8 @@ class Decoder(nn.Module):
         rnn_input = torch.cat([embedded, context.unsqueeze(0)], dim=-1)
         # rnn_input: (1, B, emb + enc_hid*2)
 
-        output, hidden = self.rnn(rnn_input, hidden.unsqueeze(0))
+        hidden_for_rnn = hidden.unsqueeze(0).repeat(self.rnn.num_layers, 1, 1)
+        output, hidden = self.rnn(rnn_input, hidden_for_rnn)
         # output : (1, B, dec_hid)
         # hidden : (1, B, dec_hid)
         hidden = hidden.squeeze(0)     # (B, dec_hid)
